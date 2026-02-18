@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        body { font-family: sans-serif; padding: 50px; background-color: #f4f4f4; }
+        .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        pre { background: #eee; padding: 15px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Analyzed Text</h1>
+        <p><strong>Operations Performed:</strong> {{ purpose }}</p>
+        
+        <pre>{{ analyzed_text }}</pre>
+
+        {% if word_count %}
+            <p><strong>Word Count:</strong> {{ word_count }}</p>
+        {% endif %}
+
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
